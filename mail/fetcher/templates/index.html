@@ -1,0 +1,45 @@
+{% load static %}
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mail Fetcher</title>
+        <link href="{% static 'style.css' %}" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="{% static 'personal_logo.png' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        <div id="main">
+
+            <div id="header">
+                <h1>Mail Fetcher</h1>
+
+                <div id="progress_container">
+                    <div id="progress"></div>
+                    <p id="progress_text">Включаемся..</p>
+                </div>
+            </div>
+
+                <div class="message bold">
+                    <p style="width: 7%">UID</p>
+                    <p style="width: 30%"><b>Тема</b></p>
+                    <p>Получено из</p>
+                    <p>От кого</p>
+                    <p>Отправлено</p>
+                    <p>Получено</p>
+                    <p style="width: 30%">Текст письма</p>
+                    <p>Вложения</p>
+                    <p>ID вложений</p>
+                </div>
+            <div id="messages_container"></div>
+
+        </div>
+
+        <script src="{% static 'logic.js' %}"></script>
+    </body>
+</html>

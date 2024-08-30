@@ -1,0 +1,11 @@
+/__pycache__/*
+postgres_data/
+*.pyc
+.env
+*.rdb
+!__init__.py
+migrations/
+!migrations/__init__.py
+*.ipynb
+mail_files/
+attachments/
