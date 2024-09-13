@@ -64,7 +64,7 @@ class WsConsumer(AsyncWebsocketConsumer):
             # If there are emails we already fetched,
             # filter to fetch only new ones
             if last_email_uid > 0:
-                uids = [uid for uid in uids if uid > last_email_uid]
+                uids = [str(uid) for uid in uids if uid > last_email_uid]
             await self.fetch_new_messages(uids, imap)
 
     async def fetch_new_messages(self, uids: list[str],

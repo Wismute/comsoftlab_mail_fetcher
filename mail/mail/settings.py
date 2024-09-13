@@ -110,6 +110,7 @@ IMAP_SERVERS = {
     'gmail': 'imap.gmail.com',
     'yandex': 'imap.yandex.ru',
     'mail': 'imap.mail.ru',
+    'batalichev': 'imap.mail.ru',
 }
 
 # Password validation
